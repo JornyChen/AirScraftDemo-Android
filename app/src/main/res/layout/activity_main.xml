@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="对话框设置" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#ddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/sys_dialog_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android 系统对话框" />
+        <RadioButton
+            android:id="@+id/canvas_dialog_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Canvas 对话框" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="音乐设置" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#ddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/voice_open_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="开" />
+
+        <RadioButton
+            android:id="@+id/voice_close_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="关" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="子弹无限" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#ddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/infinite_open_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="开" />
+
+        <RadioButton
+            android:id="@+id/infinite_close_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="关" />
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="120dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dip"
+        android:onClick="startGame"
+        android:text="开始游戏" />
+
+</LinearLayout>
